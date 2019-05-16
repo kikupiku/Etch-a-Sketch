@@ -4,6 +4,8 @@ let lilBox;
 let boxes;
 let buttonText;
 let mode;
+let knobOne;
+let knobTwo;
 
 let size = document.querySelector(".size");
 let color = document.querySelector(".color");
@@ -28,6 +30,7 @@ function createGrid() {
    box.style.height = (400/sideNo) + 'px';
    box.style.width = (400/sideNo) + 'px';
   }
+  addKnobs();
 }
 
 function removeGrid() {
@@ -42,6 +45,15 @@ function chooseColor(blackOrColor) {
     boxes[l].addEventListener('mouseenter', blackOrColor);
     console.log(blackOrColor);
   }
+}
+
+function addKnobs() {
+  knobOne = document.createElement("div");
+  knobOne.classList.add('knobOne');
+  papaBox.appendChild(knobOne);
+  knobTwo = document.createElement("div");
+  knobTwo.classList.add('knobTwo');
+  papaBox.appendChild(knobTwo);
 }
 
 createGrid();
