@@ -1,0 +1,29 @@
+.size {
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  height: 30px;
+  margin: 50px auto;
+  display: block;
+  align: center;
+}
+
+.container {
+  align-content: stretch;
+  margin: auto;
+  margin-top: 50px;
+  height: 400px;
+  width: 400px;
+  align: center;
+  border: 1px solid black;
+  justify-content: flex-start;
+}
+
+.lilBox {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  float: left;
+  /* border: 1px solid black; */
+  margin: 0;
+}
