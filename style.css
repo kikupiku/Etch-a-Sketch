@@ -1,4 +1,28 @@
-.size {
+
+
+html {
+  background-image: url("./background.jpg")
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 42px;
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+p, h3 {
+  margin: 0px auto;
+  font-size: 24px;
+}
+
+h1, p, h3 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.size, .color, .clear {
   border-radius: 5px;
   background-color: green;
   color: white;
@@ -8,18 +32,28 @@
   align: center;
 }
 
+.color, .clear {
+  margin-top: 0px;
+}
+
+.size, .color {
+  margin-bottom: 10px;
+}
+
 .container {
+  border: 40px solid red;
+  border-radius: 10px;
   align-content: stretch;
   margin: auto;
   margin-top: 50px;
   height: 400px;
   width: 400px;
   align: center;
-  border: 1px solid black;
   justify-content: flex-start;
 }
 
 .lilBox {
+  background: white;
   box-sizing: border-box;
   position: relative;
   display: inline-block;
